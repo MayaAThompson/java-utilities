@@ -4,7 +4,8 @@ public class FormatUtils {
 
     private FormatUtils(){}
 
-    /** A utility that prints a divider to the console.
+    /**
+     * A utility that prints a divider to the console.
      *<p></p>
      * Accepts 2 arguments; a {@code String} and an {@code int}
      *
@@ -17,7 +18,8 @@ public class FormatUtils {
         System.out.println(divider.repeat(Math.max(0, n)));
     }
 
-    /** A utility that prints a divider to the console.
+    /**
+     * A utility that prints a divider to the console.
      * Works like {@link FormatUtils#printDivider(String, int)} except uses a default divider "-"
      *<p></p>
      * @param n the number of times the divider "-" should be printed to the console.
