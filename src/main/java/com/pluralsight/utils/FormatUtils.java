@@ -5,8 +5,7 @@ public class FormatUtils {
     private FormatUtils(){}
 
     /**
-     * A utility that prints a divider to the console.
-     *<p></p>
+     * Prints a divider to the console.<br>
      * Accepts 2 arguments; a {@code String} and an {@code int}
      *
      * @param divider String that will be used as the divider printed to the console.
@@ -19,9 +18,9 @@ public class FormatUtils {
     }
 
     /**
-     * A utility that prints a divider to the console.
+     * Prints a divider to the console.<br>
      * Works like {@link FormatUtils#printDivider(String, int)} except uses a default divider "-"
-     *<p></p>
+     *
      * @param n the number of times the divider "-" should be printed to the console.
      * @see FormatUtils#printDivider(String, int)
      */

@@ -9,7 +9,7 @@ public class IOUtils {
     static Scanner scanner = new Scanner(System.in);
 
     /**
-     * A utility to print a message to the console and return the users input.
+     * Prints a message to the console and returns the users input.
      *
      * @param message {@code String} message that you want to print to console.
      * @param required <p>{@code true} will loop until the {@code String} input from console is not empty.</p>
@@ -33,7 +33,7 @@ public class IOUtils {
     }
 
     /**
-     * <p>A utility to print a message to the console and return the users input.</p>
+     * Prints a message to the console and returns the users input.<br>
      * Works like {@link IOUtils#messageAndResponse(String, boolean)} except will always allow return of and empty {@code String}
      * @param message {@code String} message that you want to print to console.
      *
@@ -47,7 +47,7 @@ public class IOUtils {
     }
 
     /**
-     * <p>A utility to print a message to the console and return the users input {@code int}.</p>
+     * Prints a message to the console and returns the users input {@code int}.<br>
      * Works like {@link IOUtils#messageAndResponse(String)} except attempts to return an {@code int}
      * @param message {@code String} message that you want to print to console.
      *
@@ -62,7 +62,7 @@ public class IOUtils {
     }
 
     /**
-     * <p>A utility to print a message to the console and return the users input {@code double}.</p>
+     * Prints a message to the console and returns the users input {@code double}.<br>
      * Works like {@link IOUtils#messageAndResponse(String)} except attempts to return an {@code double}
      * @param message {@code String} message that you want to print to console.
      *
@@ -76,7 +76,7 @@ public class IOUtils {
     }
 
     /**
-     * A utility that pauses the program and waits for the next CRLF.
+     * Pauses the program and waits for the next CRLF.
      * Anything else input to the console will be discarded.
      */
 
@@ -86,7 +86,7 @@ public class IOUtils {
     }
 
     /**
-     * A utility that capitalizes the first letter of each word separated by a space in a {@code String} and makes every other character lower case.
+     * Capitalizes the first letter of each word separated by a space in a {@code String} and makes every other character lower case.
      *
      * @param input {@code String} case insensitive.
      * @return {@code String} with the first letter of each word (space separated) capitalized.
