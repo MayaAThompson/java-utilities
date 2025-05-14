@@ -28,7 +28,21 @@ These are utilities that are related to formatting of things in the console.
 Prints a line to the console to be used as a visual divider or separation.  
 It accepts a string and an integer or just an integer.  
 If a string is passed in it will be used as the divider. If no string is passed in "-" is the default divider.  
-The int denotes the number of times the divider string will be repeated.
+The int denotes the number of times the divider string will be repeated.  
+
+### makeColor
+These methods simply take in a string and return it in the color stated in the method name.  
+Example:  
+```Java
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(FormatUtils.makeGreen("Hello, world!"));
+    }
+}
+```  
+
+will print Hello, world! in green
 
 ## Using this in your Java project
 
