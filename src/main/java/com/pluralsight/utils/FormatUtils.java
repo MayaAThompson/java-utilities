@@ -14,17 +14,17 @@ public class FormatUtils {
      */
 
     public static void printDivider(String divider, int n) { //Thanks, Griffin
-        System.out.println(divider.repeat(Math.max(0, n)));
+        System.out.println(divider.repeat(n));
     }
 
     /**
      * Prints a divider to the console.<br>
      * Works like {@link FormatUtils#printDivider(String, int)} except uses a default divider "-"
      *
-     * @param n the number of times the divider "-" should be printed to the console.
+     * @param repeat the number of times the divider "-" should be printed to the console.
      * @see FormatUtils#printDivider(String, int)
      */
-    public static void printDivider(int n) { //Thanks, Griffin
-        System.out.println("-".repeat(Math.max(0, n)));
+    public static void printDivider(int repeat) { //Thanks, Griffin
+        System.out.println("-".repeat(repeat));
     }
 }
