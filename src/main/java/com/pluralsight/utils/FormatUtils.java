@@ -21,7 +21,7 @@ public class FormatUtils {
      * @throws IllegalArgumentException if {@code repeat} is negative
      */
 
-    public static void printDivider(String divider, int repeat) { //Thanks, Griffin
+    public static void printDivider(String divider, int repeat) {
         System.out.println(divider.repeat(repeat));
     }
 
@@ -33,7 +33,7 @@ public class FormatUtils {
      * @see FormatUtils#printDivider(String, int)
      * @throws IllegalArgumentException if {@code repeat} is negative
      */
-    public static void printDivider(int repeat) { //Thanks, Griffin
+    public static void printDivider(int repeat) {
         System.out.println("-".repeat(repeat));
     }
 
@@ -89,5 +89,27 @@ public class FormatUtils {
      */
     public static String makeMagenta(String message) {
         return (MAGENTA + message + RESET);
+    }
+
+    /**
+     * Takes in a String message and a String color (<font color=#ff0000>red</font>, <font color=#0000ff>blue</font>, <font color=#00ff00>green</font>, <font color=#00ffff>cyan</font>, <font color=#ff00ff>magenta</font>, <font color=#ffff00>yellow</font>) and returns the message string in the color requested.
+     * @param message {@code String} to have color applied to
+     * @param color {@code String} (case-insensitive) color to be applied. <font color=#ff0000>red</font>, <font color=#0000ff>blue</font>, <font color=#00ff00>green</font>, <font color=#00ffff>cyan</font>, <font color=#ff00ff>magenta</font>, <font color=#ffff00>yellow</font> are currently supported colors.
+     * @return {@code String} with color applied
+     * @throws RuntimeException "Color option not available" if a non-supported color is requested
+     */
+    public static String makeColor(String message, String color) {
+        color = color.toLowerCase();
+        String coloredString;
+        switch (color) {
+        case "green" -> coloredString = GREEN + message + RESET;
+        case "red" -> coloredString = RED + message + RESET;
+        case "blue" -> coloredString = BLUE + message + RESET;
+        case "yellow" -> coloredString = YELLOW + message + RESET;
+        case "cyan" -> coloredString = CYAN + message + RESET;
+        case "magenta" -> coloredString = MAGENTA + message + RESET;
+        default -> throw new RuntimeException("Color option not available");
+        }
+        return coloredString;
     }
 }

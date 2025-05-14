@@ -30,7 +30,7 @@ It accepts a string and an integer or just an integer.
 If a string is passed in it will be used as the divider. If no string is passed in "-" is the default divider.  
 The int denotes the number of times the divider string will be repeated.  
 
-### makeColor
+### makeGreen makeRed etc...
 These methods simply take in a string and return it in the color stated in the method name.  
 Example:  
 ```Java
@@ -42,7 +42,10 @@ public class Main {
 }
 ```  
 
-will print Hello, world! in green
+will print Hello, world! in green  
+
+### makeColor
+Takes in a String message and a String color (red, blue, green, cyan, magenta, or yellow) and returns the message string in the color requested.
 
 ## Using this in your Java project
 
@@ -57,7 +60,9 @@ The first time you attempt to use one of the utils it will not autopopulate, you
 import com.pluralsight.utils.*;
 ```
 After that you are ready to go!  
-If you would like your utility added to this project please contact me.
+If you would like your utility added to this project please contact me.  
+<br>
+Special thanks to Heldana, Griffin and Izel!
 
 <br>  
 

@@ -17,7 +17,7 @@ public class IOUtils {
      * @return User input {@code String} from console.
      */
 
-    public static String messageAndResponse(String message, boolean required) { //Thanks, Griffin
+    public static String messageAndResponse(String message, boolean required) {
 
         String response;
 
@@ -92,7 +92,7 @@ public class IOUtils {
      * @return {@code String} with the first letter of each word (space separated) capitalized.
      */
 
-    public static String capitalizeWords(String input) { //Thanks, Heldana
+    public static String capitalizeWords(String input) {
         String[] words = input.trim().toLowerCase().split(" ");
         StringBuilder capitalized = new StringBuilder();
 
