@@ -1,7 +1,7 @@
 # Java Utilities
 
 This project has some helpful utilities that can be imported and used in a wide variety of java projects.  
-These are compiled from YearUp United class 5 LC3 "Codeo" students, then edited and documented by me.  
+These are compiled from YearUp United class 5 LC3 :cowboy_hat_face: Codeo :cowboy_hat_face: students, then edited and documented by me.  
 
 ## IOUtils
 
@@ -49,17 +49,27 @@ Takes in a String message and a String color (red, blue, green, cyan, magenta, o
 
 ## Using this in your Java project
 
-From the project you want to use the utilities in:  
-File -> New -> Module from existing sources...  
-Navigate to /java-utilities/  
-Select pom.xml  
-Open  
+Copy and paste this into your pom.xml:
 
-The first time you attempt to use one of the utils it will not autopopulate, you will have to mouse over and click "add dependency". After the dependency is added you will have to import the class:  
-```Java
-import com.pluralsight.utils.*;
+```.xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+<dependencies>
+    <dependency>
+        <groupId>com.github.MayaAThompson</groupId>
+        <artifactId>java-utilities</artifactId>
+        <version>920bf7c</version>
+    </dependency>
+</dependencies>
 ```
+Be sure to import classes where you need them!  
+
 After that you are ready to go!  
+
 If you would like your utility added to this project please contact me.  
 <br>
 Special thanks to Heldana, Griffin and Izel!

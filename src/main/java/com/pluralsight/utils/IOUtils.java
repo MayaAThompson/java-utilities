@@ -53,7 +53,7 @@ public class IOUtils {
      *
      * @return {@code int} from user input.
      * @see IOUtils#messageAndResponse(String)
-     * @throws NumberFormatException if an @{code int} is not provided.
+     * @throws NumberFormatException if an {@code int} is not provided.
      */
 
     public static int messageAndResponseInt(String message) {
